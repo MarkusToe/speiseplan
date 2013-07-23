@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'simple_form'
 gem 'cocoon'
 gem 'haml'
+gem 'gon'
 
 
 # Gems used only for assets and not required
@@ -24,6 +25,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem "jquery-ui-rails", "~> 4.0.3"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -41,6 +41,9 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    gon (4.1.1)
+      actionpack (>= 2.3.0)
+      json
     haml (4.0.3)
       tilt
     hike (1.2.3)
@@ -49,6 +52,9 @@ GEM
     jquery-rails (3.0.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (4.0.3)
+      jquery-rails
+      railties (>= 3.1.0)
     json (1.8.0)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -111,8 +117,10 @@ PLATFORMS
 DEPENDENCIES
   cocoon
   coffee-rails (~> 3.2.1)
+  gon
   haml
   jquery-rails
+  jquery-ui-rails (~> 4.0.3)
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
   simple_form

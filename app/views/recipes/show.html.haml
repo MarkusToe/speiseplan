@@ -2,7 +2,7 @@
 
 %h2= @recipe.title
 .row
-  .span3
+  .span4
     %h3 Zutaten
     %ul
       - @recipe.quantities.each do |q|
@@ -11,34 +11,8 @@
           = q.ingredient.name
     %h4 Menüart
     %p= @recipe.description
-  .span6
+  .span8
     %h3 Zubereitung
     %p= @recipe.instructions
     = link_to 'Edit', edit_recipe_path(@recipe)
     = link_to 'Back', recipes_path
-
-/ <p>
-/   <b>Title:</b>
-/   <%= @recipe.title %>
-/ </p>
-
-/ <p>
-/   <b>Description:</b>
-/   <%= @recipe.description %>
-/ </p>
-
-/ <p>
-/   <b>Ingredients:</b>
-/   <% @recipe.quantities.each do |q| %>
-/   	<li><%= q.amount %> <%= q.ingredient.name %></li>
-/   <% end %>
-/ </p>
-
-/ <p>
-/   <b>Instructions:</b>
-/   <%= @recipe.instructions %>
-/ </p>
-
-
-/ <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-/ <%= link_to 'Back', recipes_path %>

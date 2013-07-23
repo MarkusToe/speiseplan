@@ -1,10 +1,14 @@
-= simple_form_for @recipe do |f|
-	= f.input :title
-	= f.input :description
-	= f.input :instructions
-	%h3 Ingredients
-	#quantities
-		= f.simple_fields_for :quantities do |q|
-			= render 'quantity_fields', :f => q
-		= link_to_add_association 'add ingredient', f, :quantities
-	= f.submit
+.row
+	.span4
+		%h3 Ingredients
+		= simple_form_for @recipe do |f|
+			= f.simple_fields_for :quantities do |q|
+				= render 'quantity_fields', :f => q
+			= link_to_add_association 'add ingredient', f, :quantities
+	.span8
+		%h3 Recipe
+		= simple_form_for @recipe do |f|
+			= f.input :title
+			= f.input :description
+			= f.input :instructions
+			= f.submit

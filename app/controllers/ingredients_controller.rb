@@ -2,6 +2,9 @@ class IngredientsController < ApplicationController
   # GET /ingredients
   # GET /ingredients.json
   def index
+
+    gon.ingredients = Ingredient.limit(10)
+
     @ingredients = Ingredient.all
 
     respond_to do |format|

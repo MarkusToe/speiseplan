@@ -2,6 +2,9 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
+
+    gon.recipes = Recipe.all
+
     @recipes = Recipe.all
 
     respond_to do |format|
