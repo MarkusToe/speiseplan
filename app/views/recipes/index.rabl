@@ -1,0 +1,2 @@
+object @recipes
+attributes :title

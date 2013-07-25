@@ -10,6 +10,7 @@ gem 'simple_form'
 gem 'cocoon'
 gem 'haml'
 gem 'gon'
+gem 'rabl'
 
 
 # Gems used only for assets and not required
